@@ -29,13 +29,16 @@ os.environ["LANG"] = "en_US"  # Simulando a configuração da variável de ambie
 
 current_language = os.getenv("LANG")[:5]  # Simulando a leitura da variável de ambiente LANG
 
+print(f"Idioma configurado: {current_language}")
+
 msg = "Hello, World!!"
 
 if current_language == "pt_br":
     msg = "Olá, Mundo!!"
 elif current_language == "it_IT":
     msg = "Ciao, Mondo!!"   
-
+elif current_language == "es_ES":
+    msg = "Hola, Mundo!!"
 
 
 
